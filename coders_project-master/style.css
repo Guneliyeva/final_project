@@ -18,6 +18,9 @@ body {
   width: 1140px;
   max-width: 95%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 /* -------------------------------------------------------------------------------------------------------------- */
@@ -573,3 +576,77 @@ hr {
   justify-content: space-around;
 }
 
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* checkout */
+
+.checkout{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.checkout_left {
+  width: calc(70% - 10px);  
+  background-color: aliceblue;
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.checkout hr{
+  background: var(--gray-gray-20, rgba(163, 170, 171, 0.20));
+}
+
+
+.checkout_right {
+  width: calc(30% - 10px); 
+  background-color: #e0e0e0; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+.checkout_fields{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.fields_detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  text-decoration: underline;
+}
+
+.total-price {
+  font-weight: bold;
+}
