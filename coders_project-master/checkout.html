@@ -1,78 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="checkout">
-            <h1>Checkout</h1>
-            <div class="checkout_left">
-                <div class="checkout_fields">
-                    <div>Products</div>
-                    <div class="fields_detail">
-                        <span>Price</span>
-                        <span>Quantity</span>
-                        <span>Subtotal</span>
-                    </div>
-                    
-                </div>
+      <div class="navbar">
+        <div class="nav">
+          <div class="logo_text">
+            <img
+              src="media/homepage_logo.svg"
+              alt="header-logo"
+              class="header_logo"
+            />
+          </div>
 
-                <div>
-                    <img src="media/pro5.png" alt="">
-                    <h4>Modern Sofa Chair</h4>
-                    <span>Color: Grey</span>
-                </div>
-
-                <div>
-
-                </div>
-
-            </div>
-
-            <div class="checkout_right">
-
-            </div>
+          <ul class="header_menu">
+            <li><a href="">Home</a></li>
+            <li>
+              <a href="">Shop <img src="media/down.svg" alt="down" /></a>
+              <ul class="dropdown">
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+              </ul>
+            </li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
         </div>
+        <div class="nav_login">
+          <ul class="header_icon">
+            <li>
+              <button class="icon-button">
+                <img src="media/search_icon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="icon-button">
+                <img src="media/fav_icon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="icon-button">
+                <img src="media/shopbuy_icon.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+          <button class="login-button"><span>Login</span></button>
+        </div>
+      </div>
+      
+      <div class="checkout">
+        
+        <div class="checkout_left">
+            <h1>Checkout</h1>
+          <div class="checkout_fields">
+            <div>Products</div>
+            <div class="fields_detail">
+              <span>Price</span>
+              <span>Quantity</span>
+              <span>Subtotal</span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="table_row">
+            <div class="table_row_detail">
+              <img src="media/pro7.png" alt="" id="img_border" />
+              <div class="media_text">
+                <h4>Modern Sofa Chair</h4>
+                <span>Color: Grey</span>
+              </div>
+            </div>
+            <div class="fields_detail">
+              <span>$300</span>
+              <span id="Increase"> - 1 + </span>
+              <span>$300</span>
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </div>
+
+          <div class="table_row">
+            <div class="table_row_detail">
+              <img src="media/pro5.png" alt="" id="img_border" />
+              <div class="media_text">
+                <h4>Modern Sofa Chair</h4>
+                <span>Color: Grey</span>
+              </div>
+            </div>
+            <div class="fields_detail">
+              <span>$300</span>
+              <span> - 1 + </span>
+              <span>$300</span>
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="checkout_right">
+            <div class="subtotal">
+                <h4>Subtotal</h4>
+                <h4>$440</h4>
+            </div>
+            <hr id="subtotal_hr">
+
+            <span>Enter Discount Code</span>
+
+            <form id="couponForm">
+                <label for="couponCode">Kupon Kodu:</label>
+                <input type="text" id="couponCode" name="couponCode" required>
+                <button type="submit">Kullan</button>
+                <p id="resultMessage"></p>
+            </form>
+
+            <div class="delivery">
+                <span>Delivery charge</span>
+                <span>$5.00</span>
+            </div>
+
+            <hr id="subtotal_hr">
+
+            <div>
+                <h4>Grand Total</h4>
+                <h4>$445.00</h4>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="footer">
+        <ul>
+          <img
+            src="media/homepage_logo.svg"
+            alt="footer-logo"
+            class="footer_logo"
+          />
+          <li class="media_icon">
+            <img src="media/calling.svg" alt="">
+            <span>(602) 462-0127</span>
+          </li>
+          <li class="media_icon">
+            <img src="media/gmail.svg" alt="">
+            <span>melta@example.com</span>
+          </li>
+          <li class="media_icon">
+            <img src="media/location.svg" alt="">
+            <span>1901 Thornridge Cir. Shiloh</span>
+          </li>
+        </ul>
+      
+        <ul>
+          <li><spa class="bold">Information</spa></li>
+          <li><a href="">My Account</a></li>
+          <li><a href="">Login</a></li>
+          <li><a href="">My Cart</a></li>
+          <li><a href="">My Wishlist</a></li>
+          <li><a href="">Checkout</a></li>
+        </ul>
+      
+        <ul>
+          <li><span class="bold">Service</span></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Delivery Information</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms and Conditions</a></li>
+        </ul>
+      
+        <ul>
+          <li><span class="bold">Subscribe</span></li>
+          <li>
+            Enter your email below to be the first <br> to know about new
+            collections.
+          </li>
+          <li class="gmail">
+            <img src="media/gmail.svg" alt="gmail icon">
+            <span style="margin-right: 145px;">Your Email</span>
+            <img src="media/right.svg" alt="right icon"></li>
+        </ul>
+      </div>
+      <br><br>
+      <div class="footer_end">
+        <ul class="pay_card">
+            <li><img src="media/Visa.svg" alt="Visa"></li>
+            <li><img src="media/Mastercard.svg" alt="Mastercard"></li>
+            <li><img src="media/GooglePay.svg" alt="GooglePay"></li>
+            <li><img src="media/Amex.svg" alt="Amex"></li>
+            <li><img src="media/PayPal.svg" alt="PayPal"></li>
+        </ul>
+       
+        <span>©2023 Melta All Rights are reserved️ </span>
+        <ul class="social">
+            <li><img src="media/fb.svg" alt="facebook icon"></li>
+            <li><img src="media/instagram.svg" alt="instagram icon"></li>
+            <li><img src="media/twitter.svg" alt="twitter icon"></li>
+        </ul>
+      
+      </div>
     </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Sepet</h1>
-    <table id="cartTable">
-        <thead>
-            <tr>
-                <th>Fotoğraf</th>
-                <th>Fiyat</th>
-                <th>Tane Sayısı</th>
-                <th>Toplam Fiyat</th>
-                <th>Sil</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Ürün satırları buraya eklenecek -->
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">Toplam:</td>
-                <td id="totalPrice" class="total-price">0.00</td>
-                <td></td>
-            </tr>
-        </tfoot>
-    </table>
-
-    <script src="app.js"></script>
-</body>
+  </body>
 </html>

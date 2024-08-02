@@ -168,7 +168,6 @@ a:visited {
 footer {
   border-top: 1px solid var(--gray-gray-10, rgba(163, 170, 171, 0.1));
   background: var(--White-500, #fff);
-  
 }
 
 .footer {
@@ -223,7 +222,7 @@ footer {
   padding-top: 30px;
 }
 
-.pay_card{
+.pay_card {
   display: flex;
   justify-content: space-around;
 }
@@ -330,7 +329,8 @@ hr {
 .choose h1,
 .trending h1,
 .furniture_text h1,
-.comment_text h1, .insta h1 {
+.comment_text h1,
+.insta h1 {
   color: var(--Dark-500, #141c1d);
   font-family: Epilogue;
   font-size: 40px;
@@ -529,8 +529,11 @@ hr {
   gap: 50px;
 }
 
-.comment_text h1, .personal_detail span, 
-.comment_text span , .personal_name h4, .personal_name span{
+.comment_text h1,
+.personal_detail span,
+.comment_text span,
+.personal_name h4,
+.personal_name span {
   color: white;
 }
 
@@ -548,7 +551,7 @@ hr {
   gap: 5px;
 }
 
-.personal_detail{
+.personal_detail {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -560,93 +563,138 @@ hr {
   color: rgb(255, 197, 96);
 }
 
-#white_star{
+#white_star {
   color: rgb(57, 156, 170);
 }
 
-.insta{
+.insta {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-
-.insta_images{
+.insta_images {
   display: flex;
   justify-content: space-around;
 }
-
 
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 
 /* checkout */
 
-.checkout{
+.checkout {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 50px;
 }
 
+.checkout h1 {
+  padding-bottom: 50px;
+}
+
 .checkout_left {
-  width: calc(70% - 10px);  
-  background-color: aliceblue;
-  box-sizing: border-box; 
+  width: calc(70% - 10px);
+  /* background-color: aliceblue; */
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
-.checkout hr{
-  background: var(--gray-gray-20, rgba(163, 170, 171, 0.20));
+.checkout hr {
+  background: var(--gray-gray-20, rgba(163, 170, 171, 0.2));
 }
 
-
-.checkout_right {
-  width: calc(30% - 10px); 
-  background-color: #e0e0e0; 
-  padding: 20px; 
-  box-sizing: border-box; 
-}
-
-.checkout_fields{
+.checkout_fields {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
-.fields_detail{
+.fields_detail {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 30px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+.table_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
+.table_row_detail {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-th {
-  background-color: #f2f2f2;
-}
-
-.delete-btn {
+.fields_detail i {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
   color: red;
-  cursor: pointer;
 }
 
-.delete-btn:hover {
-  text-decoration: underline;
+#increase span {
+  width: 40px;
+  height: 50px;
+  flex-shrink: 0;
+  border-top: 1px solid var(--gray-gray-20, rgba(163, 170, 171, 0.2));
+  border-bottom: 1px solid var(--gray-gray-20, rgba(163, 170, 171, 0.2));
 }
 
-.total-price {
-  font-weight: bold;
+.table_row img {
+  width: 51px;
+  height: 48.96px;
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+#img_border {
+  border-radius: 5px;
+  border: 0.585px solid var(--gray-gray-20, rgba(163, 170, 171, 0.2));
+}
+
+.checkout_right {
+  width: calc(30% - 10px);
+  background-color: #e0e0e0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+.subtotal h4 {
+  color: var(--Dark-500, #141c1d);
+  text-align: right;
+
+  /* Body-1 Bold */
+  font-family: Epilogue;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+}
+
+.subtotal hr {
+  width: 360px;
+  height: 366px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--White-500, #fff);
+
+  /* DS_1 */
+  box-shadow: 0px 55px 110px 0px rgba(0, 0, 0, 0.05),
+    0px 55px 110px 0px rgba(0, 0, 0, 0.04);
 }
