@@ -473,6 +473,12 @@ hr {
   padding: 20px;
 }
 
+.trending_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #product_background {
   background: var(--gray-gray-10, rgba(163, 170, 171, 0.1));
   position: relative;
@@ -522,11 +528,10 @@ hr {
 }
 
 .comment {
-  background: var(--Primary-500, #088395);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 50px;
+  gap: 35px;
+  background: var(--Primary-500, #088395);
 }
 
 .comment_text h1,
@@ -539,16 +544,15 @@ hr {
 
 .comment_personal {
   display: flex;
-
   align-items: center;
+  justify-content: space-between;
   gap: 30px;
 }
 
 .personal {
   display: flex;
-
   align-items: center;
-  gap: 5px;
+  gap: 30px;
 }
 
 .personal_detail {
@@ -691,12 +695,12 @@ hr {
   line-height: 30px; /* 187.5% */
 }
 
-#subtotal_hr{
-  width: 320px; 
+#subtotal_hr {
+  width: 320px;
   height: 1px;
   flex-shrink: 0;
   border-radius: 20px;
-  background: var(--gray-gray-20, rgba(163, 170, 171, 0.20));
+  background: var(--gray-gray-20, rgba(163, 170, 171, 0.2));
 }
 
 .coupon {
@@ -712,7 +716,7 @@ hr {
 }
 
 /* alınmayan kod */
-.coupon_input {    
+.coupon_input {
   display: flex;
   align-items: center;
   width: 218px;
@@ -776,4 +780,101 @@ hr {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+}
+
+/* --------------------------------------------------------------- */
+
+/* shipping address */
+
+.shipping {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.shipping_left {
+  width: calc(70% - 10px);
+  /* background-color: aliceblue; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shipping_icon img {
+  width: calc(85% - 10px);
+}
+
+.shipping_text h4,
+.shipping_form h4 {
+  color: var(--Dark-500, #141c1d);
+
+  /* Header-6 Bold */
+  font-family: Epilogue;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+
+.shipping_text span {
+  color: var(--Dark-500, #141c1d);
+
+  /* Body-2 Regular */
+  font-family: Epilogue;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.shipping_form {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#ship_form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input, #city,  #state{
+  border-radius: 10px;
+border: 1px solid var(--gray-gray-20, rgba(163, 170, 171, 0.20));
+display: flex;
+width: 700px;
+padding: 13px 20px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 10px;
+}
+
+
+/* tamamlanmamis dizayn */
+.default-address input{
+  width: 24px;
+height: 24px;
+}
+
+.form-group button {
+  display: flex;
+  width: 320px;
+  height: 56px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--Primary-500, #088395);
+  color: white;
 }
