@@ -60,20 +60,20 @@
           <button class="login-button"><span>Login</span></button>
         </div>
       </div>
-      
+
       <div class="checkout">
-        
         <div class="checkout_left">
-            <h1>Checkout</h1>
+          <h1>Checkout</h1>
           <div class="checkout_fields">
             <div>Products</div>
             <div class="fields_detail">
               <span>Price</span>
               <span>Quantity</span>
               <span>Subtotal</span>
-              <span></span>
+              <span> </span>
             </div>
           </div>
+          <hr id="checkout_hr" />
 
           <div class="table_row">
             <div class="table_row_detail">
@@ -90,6 +90,7 @@
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </div>
+          <hr id="checkout_hr" />
 
           <div class="table_row">
             <div class="table_row_detail">
@@ -106,56 +107,52 @@
               <i class="fa-regular fa-trash-can"></i>
             </div>
           </div>
+          <hr id="checkout_hr" />
         </div>
-
-
-
-
 
         <div class="checkout_right">
-            <div class="subtotal">
-                <h4>Subtotal</h4>
-                <h4>$440</h4>
-            </div>
-            <hr id="subtotal_hr">
+          <div class="subtotal">
+            <h4>Subtotal</h4>
+            <h4>$440</h4>
+          </div>
+          <hr id="subtotal_hr" />
 
-            <span>Enter Discount Code</span>
+          <span>Enter Discount Code</span>
 
-            <form id="couponForm">
-                <label for="couponCode">Kupon Kodu:</label>
-                <input type="text" id="couponCode" name="couponCode" required>
-                <button type="submit">Kullan</button>
-                <p id="resultMessage"></p>
-            </form>
+          <div class="coupon">
+          <div class="coupon_input">
+            <input
+              type="text"
+              id="coupon-code"
+              placeholder="Enter discount code"
+            />
+            <button id="apply-coupon">Apply</button>
+          </div>
 
-            <div class="delivery">
-                <span>Delivery charge</span>
-                <span>$5.00</span>
-            </div>
-
-            <hr id="subtotal_hr">
-
-            <div>
-                <h4>Grand Total</h4>
-                <h4>$445.00</h4>
-            </div>
-
-
-
-
-
-
+          
+        </div>
+        <div class="delivery">
+          <div>Delivery charge</div>
+          <div>$5.00</div>
         </div>
 
+          <hr id="subtotal_hr" />
 
+          <div class="total">
+            <h4>Grand Total</h4>
+            <h4>$445.00</h4>
+          </div>
 
-
-
-
-
-
-
+          <div class="checkout">
+            <button id="proceed-to-checkout">Proceed to Checkout</button>
+          </div>
+        </div>
       </div>
+
+
+
+
+
       <div class="footer">
         <ul>
           <img
@@ -164,19 +161,19 @@
             class="footer_logo"
           />
           <li class="media_icon">
-            <img src="media/calling.svg" alt="">
+            <img src="media/calling.svg" alt="" />
             <span>(602) 462-0127</span>
           </li>
           <li class="media_icon">
-            <img src="media/gmail.svg" alt="">
+            <img src="media/gmail.svg" alt="" />
             <span>melta@example.com</span>
           </li>
           <li class="media_icon">
-            <img src="media/location.svg" alt="">
+            <img src="media/location.svg" alt="" />
             <span>1901 Thornridge Cir. Shiloh</span>
           </li>
         </ul>
-      
+
         <ul>
           <li><spa class="bold">Information</spa></li>
           <li><a href="">My Account</a></li>
@@ -185,7 +182,7 @@
           <li><a href="">My Wishlist</a></li>
           <li><a href="">Checkout</a></li>
         </ul>
-      
+
         <ul>
           <li><span class="bold">Service</span></li>
           <li><a href="">About Us</a></li>
@@ -194,36 +191,36 @@
           <li><a href="">Privacy Policy</a></li>
           <li><a href="">Terms and Conditions</a></li>
         </ul>
-      
+
         <ul>
           <li><span class="bold">Subscribe</span></li>
           <li>
-            Enter your email below to be the first <br> to know about new
-            collections.
+            Enter your email below to be the first <br />
+            to know about new collections.
           </li>
           <li class="gmail">
-            <img src="media/gmail.svg" alt="gmail icon">
-            <span style="margin-right: 145px;">Your Email</span>
-            <img src="media/right.svg" alt="right icon"></li>
+            <img src="media/gmail.svg" alt="gmail icon" />
+            <span style="margin-right: 145px">Your Email</span>
+            <img src="media/right.svg" alt="right icon" />
+          </li>
         </ul>
       </div>
-      <br><br>
+      <br /><br />
       <div class="footer_end">
         <ul class="pay_card">
-            <li><img src="media/Visa.svg" alt="Visa"></li>
-            <li><img src="media/Mastercard.svg" alt="Mastercard"></li>
-            <li><img src="media/GooglePay.svg" alt="GooglePay"></li>
-            <li><img src="media/Amex.svg" alt="Amex"></li>
-            <li><img src="media/PayPal.svg" alt="PayPal"></li>
+          <li><img src="media/Visa.svg" alt="Visa" /></li>
+          <li><img src="media/Mastercard.svg" alt="Mastercard" /></li>
+          <li><img src="media/GooglePay.svg" alt="GooglePay" /></li>
+          <li><img src="media/Amex.svg" alt="Amex" /></li>
+          <li><img src="media/PayPal.svg" alt="PayPal" /></li>
         </ul>
-       
+
         <span>©2023 Melta All Rights are reserved️ </span>
         <ul class="social">
-            <li><img src="media/fb.svg" alt="facebook icon"></li>
-            <li><img src="media/instagram.svg" alt="instagram icon"></li>
-            <li><img src="media/twitter.svg" alt="twitter icon"></li>
+          <li><img src="media/fb.svg" alt="facebook icon" /></li>
+          <li><img src="media/instagram.svg" alt="instagram icon" /></li>
+          <li><img src="media/twitter.svg" alt="twitter icon" /></li>
         </ul>
-      
       </div>
     </div>
   </body>
